@@ -1,0 +1,830 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+}
+*{
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.showww{
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  z-index: 999999;
+  box-shadow: 7px 2px 3px 3px rgb(204, 197, 197);
+  transition: all 2s linear ;
+
+}
+
+.tra{
+  transition: all 3s ease-in-out;
+}
+
+.mybtnnnn{
+  background-color: transparent;
+  border: none;
+  color: #fff;
+}
+
+li{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+}
+.navbar{
+  width: 100%;
+    height: 71px;
+    background-color: #f8f8f8;
+    transition: all 2s linear !important ;
+ 
+}
+.myul {
+    display: none;
+}
+.fa-bars{
+    font-size: 30px;
+display: none !important;
+}
+
+
+.navbar .nav-item .nav-link{
+    font-size: 13px;
+    color: #000;
+    font-weight: 600;
+    height: 71px;
+display: flex;
+align-items: center;
+justify-content: center;
+width: 100px;
+
+/* border: 2px solid red; */
+}
+.navbar ul .nav-item:not(.homee) {
+  position: relative;
+}
+
+.navbar .nav-item:not(.homee)::after
+  
+   {
+  content: '';
+width: 0px;
+transform: translateX(-50%);
+background: #3face4;
+position: absolute;
+left: 50%;
+bottom: 0px; 
+transition: all 0.5s;
+
+}
+
+ .navbar .nav-item:hover::after
+{
+ width: 100%;
+ height: 3px;
+
+} 
+
+.navbar .nav-item:hover:not(.homee){
+background-color: #fff;
+
+}
+
+
+.navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link , .navbar .nav-item .nav-link:hover:not(.active) , 
+.secOne ul li i:hover {
+color: #3face4;
+}
+
+
+.header_area .navbar .nav .nav-item .active {
+    color: #3face4 !;
+}
+@media only screen and (max-width : 992px){
+    .navbar .navbar-nav , 
+    .navbar .nav-item{
+        margin: 5px 0px;
+    }
+
+    .fa-bars{
+        display: block !important;
+        color: #3face4;
+        cursor: pointer;
+    }
+
+    .myul{
+        position: fixed;
+        z-index: 100;
+        background-color: #3face4;
+        top: 120px;
+        left:-250px;
+        bottom: 0;
+        width:250px;  
+        height: 100vh;
+        overflow: hidden;
+        transition: all 0.5s;
+        padding: 30px;
+          display: block;
+    }
+ 
+     .specialUl{
+ top: 71px;
+    }
+    .myul a , .mybtnnnn{
+        display: block;
+      
+        margin-bottom: 30px;
+        color: #fff;
+    }
+
+      .myul a:hover:not(.activeHome) {
+        color: #fff;
+        }
+   .secTwo{
+   display: none !important;
+   }
+   .showw{
+margin-left: 250px;
+transition: all 0.5s ease;
+   }
+
+   /* section form */
+
+   .MyFormaia{
+    margin-top: 50px;
+   }
+
+}
+
+
+.big-text{
+margin: 20px 0;
+}
+
+
+.headerTop{
+    height: 50px;
+ padding: 0;
+ margin: 0;
+  
+}
+
+
+.secOne ul{
+display: flex;
+align-items: center;
+width: fit-content;
+margin-left: -50px;
+
+  }
+  .secOne ul li{
+     padding : 10px 20px; 
+  
+    
+     
+  }
+  
+  
+  .secOne ul li i {
+  
+      color: #777777;
+      font-size: 12px;
+     
+  
+  }
+
+
+  
+  
+  #iconClose , #icon-menue{
+    cursor: pointer;
+  }
+
+
+  .secTwo{
+    display: flex;
+    align-items: center;
+position: relative;  
+
+}
+
+ .secTwo ul{
+   position: absolute;
+  right: 30px;
+  }
+  .secTwo ul li {
+    color: #000;
+padding-left: 10px;
+}
+  .secTwo ul li  i{
+color: #3face4;
+padding-right: 10px;  
+}
+  .secTwo ul li a{
+    color: #000;
+    font-size: 14px;
+  }
+
+  /* Start Hero section  */
+
+.HeroSection{
+  width: 100%;
+  height: 650px;
+  background-image: url("./assets/home.jpg.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+  .HeroContent h2 {
+    font-size: 50px;
+    font-weight: 500;
+  }
+
+  .HeroContent p{
+ font-size: 15px;
+
+  }
+
+  .HeroContent p , .HeroContent h2{
+    color: #fff;
+    margin-bottom: 30px;
+  }
+  .HeroContent button , .btnCarsoul{
+    width: 140px;
+    height: 40px;
+    color: #fff;
+    background-color: #3face4;
+    border: none;
+  }
+
+  .HeroSection .container {
+
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+
+
+  /* Start section Two */
+
+
+
+  .sectionTwo{
+
+margin: 70px 0;
+  }
+ .titlee{
+  padding: 40px 0;
+  text-align: center;
+
+}
+
+
+   .titlee h2{
+font-size: 40px;
+font-weight: 600;
+  }
+
+   .titlee p{
+     color: #777777;
+  }
+
+.secImage{
+  overflow: hidden;
+  margin-top: 20px;
+  position: relative;
+}
+
+
+.overlay{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50% , -50%);
+  width: 80%;
+  height: 80%;
+  background-color: rgba(0,0,0,.6);
+  opacity: 0;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.overlay h2{
+  border-top: 3px solid #fff;
+  border-bottom: 3px solid #fff;
+
+  padding: 15px;
+font-size: 20px;
+margin-bottom: 20px;
+
+}
+.secImage:hover .overlay{
+opacity: 1;
+}
+.secImage img{
+  width: 100%;
+  height: 100%;
+}
+  /* Start section Three */
+
+
+
+ .carsoul{
+  width: 100%;
+  height: auto;
+  padding: 30px 0px;
+  margin: 60px 0;
+
+  overflow: hidden;
+ 
+}
+.big-text{
+  padding: 40px;
+}
+.carsoul h2{
+  color: #010101;
+  font-size: 40px;
+  margin: 15px 0px;
+}
+
+.carsoul p{
+  color: #777;
+  font-size: 16px;
+  line-height: 28px;
+  margin: 25px 0px;
+}
+ 
+.carsoul .row{
+  margin: 20px 0px;
+}
+.carousel-item img{
+  width: 100%;
+}
+
+.carsoul{
+  background-color: #f9f9f9;
+}
+
+
+
+
+
+/* Start sectionThree */
+.sec3
+{
+margin: 60px 0;
+}
+
+
+.Divcontent{
+background-color: #f9f9ff;
+padding: 40px;
+
+}
+
+
+.Divcontent .myp{
+
+  font-size: 17px;
+  margin-top: 30px;
+  color: #777777;
+  line-height: 25px;
+
+}
+
+.Divcontent h2  {
+  margin-bottom: 20px;
+  font-weight: bold;
+  color: #000;
+}
+
+.Divimage img{
+  width: 100%;
+  height: 100%;
+}
+.activity{
+ margin-top: 26px;
+}
+.myactive{
+  border: 1px solid #dddddd;
+  padding: 10px;
+  height: 140px;
+  margin: 15px 0;
+  background-color: #fff;
+transition:  all 0.3s ease-in-out;
+
+}
+
+.myactive:hover{
+  box-shadow: 0 8px 21px #dddddd;
+  border: 1px solid transparent;
+}
+.myactive h4{
+margin-top: 5px;
+}
+.myactive i{
+  font-size: 20px;
+  color: #3face4;
+  margin-bottom: 5px;
+}
+
+.test{
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+
+@media only screen and (min-width : 1286px){
+.test{
+  margin-top: 80px;
+
+}
+}
+
+@media only screen and (min-width : 1201px){
+.myp{
+  width: 360px;
+}
+
+.Divcontent{
+  margin-left: -10px;
+  
+  }
+  
+footer .container
+,
+  .container {
+  padding:0 80px !important;
+} 
+}
+
+
+/*start  Section four */
+
+.sectionfour{
+  margin: 60px 0;
+}
+
+.boxaia{
+  text-align: center;
+  padding: 20px;
+  margin-top: 30px;
+
+}
+
+
+.boxaia   i{
+  font-size: 40px;
+  color: #3face4;
+  margin-bottom: 20px;
+}
+.boxaia h4{
+  font-size: 19px;
+  font-weight: bold;
+  color: #000;
+}
+.boxaia p{
+  line-height: 28px;
+  color: #777777;
+  margin-top: 20px;
+}
+.fa-heart{
+  cursor: pointer;
+}
+/* Start section secCards */
+
+.secCards{
+  margin: 60px 0;
+
+
+
+}
+
+.secCards .card{
+  border: none;
+  text-align: left;
+  margin-top: 25px;
+
+
+}
+
+.secCards .card:hover  .card-body a{ 
+color: #3face4;
+transition: all 0.5s ease;
+}
+.secCards .card .imageDevaia {
+  overflow: hidden;
+
+}
+
+.secCards .card img{
+  transition: all 0.7s ease;
+
+}
+.secCards .card img:hover{
+transform: scale(1.1);
+
+}
+.secCards .card .card-body {
+  padding-left: 0;
+}
+.secCards .card .card-body a{
+ display: block;
+  color: #000;
+  font-size: 22px;
+  font-weight: bold;
+margin-top: 15px;
+}
+.secCards .card .card-body p{
+color: #777777;
+line-height: 28px;
+margin-top: 20px;
+}
+
+
+.finalDiv{
+  display: flex;
+  align-items: center;
+}
+
+.iconsNum {
+  display: flex;
+  align-items: center;
+ margin-right: 40px;
+color: #777777;
+}
+.iconsNum p{
+  margin-top: 15px;
+}
+
+
+/* toggle */
+
+.tog{
+  color: #3face4;
+}
+
+
+/* Start section form  */
+
+
+.formaia  
+{
+margin: 50px 0;
+  background-color: #f9f9f9;
+}
+
+.MyFormaia {
+background-color: white;
+box-shadow: 0px 10px 20px 0px rgba(153, 153, 153, 0.1);
+padding: 30px 20px;
+
+}
+.MyFormaia form{
+ width: 90%;
+ margin-left: auto;
+ margin-right: auto;
+/* border: 2px solid blue; */
+
+} 
+.MyFormaia form input,
+  .MyFormaia form textarea   {
+    border: 1px solid #ced4da;
+
+  }
+.MyFormaia form input{
+width: 100%;
+height: 40px;
+margin-bottom: 10px;
+}
+
+.MyFormaia form textarea:focus,
+  .MyFormaia form input:focus  {
+outline: 1px solid  #3face4;
+}
+
+.MyFormaia form h2{
+text-align: center;
+font-size: 22px;
+margin-bottom: 7px;
+font-weight: bold;
+}
+
+.MyFormaia form textarea::placeholder,
+  .MyFormaia form input::placeholder {
+color: #777777;
+font-size: 15px;
+padding-left: 15px;
+color: #777777;
+}
+
+.MyFormaia form textarea{
+width: 100%;
+height: 150px;
+}
+
+.btn-booking{
+  display: block;
+  width: 200px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  background-color: #3face4;
+  color: #fff;
+margin-left: auto;
+margin-right: auto;
+margin-top: 15px;
+transition: all 0.7s ease;
+cursor: pointer;
+}
+
+.btn-booking:hover{
+background-color: #fff;
+color: #3face4;
+border: 1px solid #3face4;
+}
+.mysmallbox{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 2px solid #dddddd;
+  padding: 20px 0;
+}
+
+.mysmallbox h4{
+  font-size: 14px;
+}
+
+
+.speak{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+margin-right: 80px;
+}
+
+
+
+.speak h3{
+  font-size: 28px;
+  font-weight: bold;
+  color: #000;
+  margin: 30px 0;
+}
+.speak p{
+  color: #777777;
+margin-top: 20px;
+}
+
+.Error{
+  color: red;
+  font-size: 15px;
+  display: none;
+  margin: 0;
+}
+
+
+
+.PassContent
+{
+  position: relative;
+}
+#icon-password{
+  position: absolute;
+  right: 30px;
+ top :10px;
+cursor: pointer;
+}
+
+/*  start footer  */
+
+footer {
+  background-color: #222222;
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+   footer .list-unstyled  li  .text-dark{
+  color: #777777 !important;
+  display: block;
+  margin-bottom: 18px ;
+}
+
+footer .list-unstyled  li  .text-dark:hover{
+color: #3face4 !important;
+}
+.text-uppercase{
+  font-size: 17px;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 40px;
+}
+footer input {
+  width: 55%;
+  height: 40px;
+  border-radius:20px;
+ background-color: #2d2d2d;
+ border-radius: 40px;
+ border: none;
+ outline: none;
+}
+
+footer input::placeholder {
+padding-left: 13px;
+}
+
+footer input:focus   {
+padding-left: 20px;
+}
+
+footer button{
+  border: none;
+  color: #fff;
+  width: 25%;
+  height: 40px;
+  border-radius: 40px;
+  background-color: #3face4;
+  margin-left: 30px;
+  font-size: 15px;
+}
+footer .specialText{
+  color: #fff;
+  font-size: 25px;
+}
+
+
+@media only screen and (max-width : 408px){
+
+footer .formaiaFoot {
+display: block !important;
+}
+footer input{
+  width: 100%;
+
+}
+footer button{
+  display: block;
+  margin-top: 30px;
+  width: 80%;
+  margin-left: auto ;
+  margin-right: auto ;
+}
+.MyfinalIcons i{
+  margin-bottom: 13px;
+}
+
+
+}
+
+
+
+@media only screen and (max-width : 766px){
+
+  .finalFoot{
+text-align: center;
+  }
+  .finalIcons{
+    position: relative;
+  }
+  
+  .MyfinalIcons{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+
+}
+
+
+.finalFoot{
+  margin-top: 70px;
+}
+.finalIcons{
+  position: relative;
+}
+
+.MyfinalIcons{
+  width: fit-content;
+  position: absolute;
+  right: 30px;
+}
+.MyfinalIcons i{
+color: #fff;
+margin-right: 10px;
+background-color: #111111;
+padding: 10px;
+transition: all 0.5s ease-in-out;
+}
+
+.MyfinalIcons i:hover{
+background-color: #3face4;
+}
